@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>orderscontents</title>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/font-awesome.css" />	
+		<link rel="stylesheet" href="css/unicorn.css" />
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="js/respond.min.js"></script>
+		<![endif]-->
+			
+	</head>	
+	<body data-color="grey" class="flat">
+		<div id="wrapper">
+			<div id="header">
+				<h1><a href="./index.html">Shopify</a></h1>	
+				<a id="menu-trigger" href="#"><i class="fa fa-bars"></i></a>	
+			</div>
+		
+			<div id="user-nav">
+	            <ul class="btn-group">
+	                <li class="btn" ><a title="" href="#"><i class="fa fa-user"></i> <span class="text">Profile</span></a></li>
+	                <li class="btn dropdown" id="menu-messages">
+						<a href="#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle">
+							<i class="fa fa-envelope"></i> 
+							<span class="text">Messages</span> 
+							<span class="label label-danger">5</span> 
+							<b class="caret"></b>
+						</a>
+	                    <ul class="dropdown-menu messages-menu">
+	                        <li class="title">
+								<i class="fa fa-envelope-alt"></i>Messages
+								<a class="title-btn" href="#" title="Write new message"><i class="fa fa-share"></i></a>
+							</li>
+	                        <li class="message-item">
+	                        	<a href="#">
+		                            <img alt="User Icon" src="img/demo/av1.jpg" />
+		                            <div class="message-content">
+		                            	<span class="message-time">3 mins ago</span>
+		                                <span class="message-sender">Nunc Cenenatis</span>
+		                                <span class="message">Hi, can you meet me at the office tomorrow morning?</span>
+		                            </div>
+	                        	</a>
+	                        </li>
+	                        <li class="message-item">
+								<a href="#">
+		                            <img alt="User Icon" src="img/demo/av1.jpg" />
+		                            <div class="message-content">
+		                            	<span class="message-time">3 mins ago</span>
+		                                <span class="message-sender">Nunc Cenenatis</span>
+		                                <span class="message"> Hi, can you meet me at the office tomorrow morning?</span>
+		                            </div>
+	                        	</a>
+	                        </li>
+	                        <li class="message-item">
+								<a href="#">
+		                            <img alt="User Icon" src="img/demo/av1.jpg" />
+		                            <div class="message-content">
+		                            	<span class="message-time">3 mins ago</span>
+		                                <span class="message-sender"> Nunc Cenenatis </span>
+		                                <span class="message">Hi, can you meet me at the office tomorrow morning?</span>
+		                            </div>
+	                        	</a>
+	                        </li>
+	                    </ul>
+	                </li>
+	                <li class="btn"><a title="" href="#"><i class="fa fa-cog"></i> <span class="text">Settings</span></a></li>
+	                <li class="btn"><a title="" href="login.html"><i class="fa fa-share"></i> <span class="text">Logout</span></a></li>
+	            </ul>
+	        </div>
+
+			<div id="sidebar">
+				<div id="search">
+					<input type="text" placeholder="Search here..."/><button type="submit" class="tip-right" title="Search"><i class="fa fa-search"></i></button>
+				</div>	
+				<ul>
+                    <li><a href="editnav.html"><i class="fa fa-home"></i> <span>editnav</span></a></li>
+					<li class="submenu active">
+                        <a href="Discounts.html">
+                            <i class="glyphicon glyphicon-check" aria-hidden="true"></i><span>Discounts</span>
+							<i class="arrow fa fa-chevron-right"></i>
+                        </a>
+						<ul>
+                            <li><a href="Discounts.html">Discounts</a></li>
+                            <li><a href="Discountscontent.html">Discountscontent</a></li>
+							<li><a href="creatediscount.html">creatediscount</a></li>
+                        </ul>
+                    </li>
+					<li class="submenu active">
+                        <a href="Customerscontent.html">
+                            <i class="glyphicon glyphicon-check" aria-hidden="true"></i><span>Customerscontent</span><i class="arrow fa fa-chevron-right"></i>
+                        </a>
+						<ul>
+                            <li><a href="Customerscontent.html">Customerscontent</a></li>
+                            <li><a href="Customers.html">Customers</a></li>
+                        </ul>
+                    </li>
+					<li class="submenu active">
+                        <a href="Collectionslist.html">
+                            <i class="glyphicon glyphicon-check" aria-hidden="true"></i><span>Collectionslist</span><i class="arrow fa fa-chevron-right"></i>
+                        </a>
+						<ul>
+                            <li><a href="Collectionadd.html">Collectionadd</a></li>
+                            <li><a href="Collectionslist.html">Collectionslist</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu active open">
+                        <a href="orders.html">
+                            <i class="glyphicon glyphicon-check" aria-hidden="true"></i><span>Orders</span>
+							<i class="arrow fa fa-chevron-right"></i>
+                        </a>
+						<ul>
+                            <li><a href="orders.html">orders</a></li>
+                            <li><a href="orderscontent.html">orderscontent</a></li>
+                        </ul>
+                    </li>				
+                    <li class="submenu active">
+                        <a href="Productadd.html"><i class="fa fa-tags"></i> <span>Products</span> <i class="arrow fa fa-chevron-right"></i></a>
+                        <ul>
+                            <li><a href="ProductList.html">Product List</a></li>
+                            <li><a href="Productadd.html">Productadd</a></li>
+                            <li><a href="Productcontent.html">Productcontent</a></li>
+							<li><a href="ProductListEdit.html">ProductListEdit</a></li>
+                        </ul>
+                    </li>
+                </ul>
+			
+			</div>
+			
+			<div id="content">
+				<div id="content-header" class="mini">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-lg-6">
+							<h1><i class="glyphicon glyphicon-check" aria-hidden="true"></i>Orders</h1>
+						</div>	
+						<div class="col-xs-12 col-sm-6 col-lg-6">
+							<div class="text-right">
+								<div class="btn-group" role="group">
+								  <button type="button" class="btn btn-default btn-bgcolor-white"><i class="fa fa-chevron-down"></i></button>
+								  <button type="button" class="btn btn-default btn-bgcolor-white" disabled="disabled"><i class="fa fa-chevron-up"></i></button>
+								</div>
+								<div class="btn-group">
+									<button type="button" class="btn btn-default dropdown-toggle btn-bgcolor-white" data-toggle="dropdown" aria-expanded="false">
+										more <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Cancel Order</a></li>
+										<li><a href="#">Unarchive</a></li>
+									</ul>
+								</div>
+								<button type="button" class="btn btn-default btn-bgcolor-white">Print</button>
+							</div>	
+						</div>	
+				  </div>
+					
+				</div>
+				<div id="breadcrumb">
+					<a href="/admin/products" title="Go to Orders List" class="tip-bottom"><i class="fa fa-tags"></i> Orders </a>
+					<a href="#" class="current">#1001 Today at 10:49pm EDT</a>
+				</div>
+				<div class="row">	
+						
+					<div class="col-xs-12 col-sm-8 col-lg-8">
+					
+						<div class="widget-box widget-box-hledit widget-box-hledit-ordercontent-left widget-box-hledit-ordercontent-tableleft">
+							<div class="widget-title">
+								<h4 class="pull-left">Order Details</h4>
+								<h6 class="pull-right"><i class="fa fa-cny ordercontent-iOnlineStore"></i>Online Store</h6>
+								<div class="clearfix"></div>
+							</div>
+							<div class="widget-content nopadding">
+								<table class="table table-striped ordercontent-table">
+									<tbody>
+										<tr>
+											<td class="image" width="50px">
+											<a href="#"><img alt="4 digit combination steel bike lock w 1.2m cable 2 thumb" class="block" src="img/explame.jpeg" title="$11.9 for a 4 Digit Combination Steel Bike Lock"></a>
+											</td>
+											<td width="45%">
+								<a href="/admin/products/335615107" class="ordercontent-table-tda">$11.9 for a 4 Digit Combination Steel Bike Lock</a>
+											  <h6 class="subdued">Default / red / jhh,gd,jjj</h6>
+											  <h6 class="subdued">SKU : PRO-2124</h6>
+											</td>
+											<td width="12%">$11.90×1</td>
+											<td>$11.90</td>
+										</tr>
+										<tr>
+											<td class="image" width="50px"></td>
+											<td width="45%"></td>
+											<td width="12%"></td>
+											<td>
+											  <table class="table--nested table--no-border type--right">
+												  <tbody>
+												  <tr>
+													<td class="subdued">Subtotal</td>
+													<td>$11.90</td>
+												  </tr>
+												  <tr>
+													  <td class="subdued">
+														<div>Shipping</div>
+														<div>Standard Shipping</div>
+														<div>0.0 kg</div>
+													  </td>
+													  <td>$10.00</td>
+												  </tr>
+												  <tr class="next-heading">
+														<td>Total</td>
+														<td>$23.09</td>
+												  </tr>
+												  <tr>
+														<td class="subdued">Paid by customer</td>
+          												<td>$23.03</td>
+												  </tr>
+												  </tbody>
+											  </table>
+											</td>
+										</tr>
+									</tbody>
+								</table>	
+							</div>
+						</div>	
+						
+						
+						<div class="widget-box widget-box-hledit widget-box-hledit-ordercontent-left">
+							<div class="widget-title">
+								<h4>Customer Note</h4>
+							</div>
+							<div class="widget-content nopadding">
+								<form>
+								  <div class="form-group">
+									<label for="orderDetails">Subscribe to our newsletter to receive special offers and discount codes by email</label>
+								  </div>
+								</form>
+							</div>
+						</div>	
+						
+						
+						<div class="widget-box widget-box-hledit widget-box-hledit-ordercontent-left">
+							<div class="widget-title">
+								<h4>Additional Details</h4>
+							</div>
+							<div class="widget-content nopadding">
+								<form>
+								  <div class="form-group">
+									<label for="orderDetails">Note</label>
+									<input type="text" class="form-control" id="orderDetails" placeholder="Add a note to this order…">
+								  </div>
+								  <div class="pull-right">
+									  <button type="button" class="btn btn-default" disabled="disabled">save</button>
+								  </div>
+								  <div class="clearfix"></div>
+								</form>
+							</div>
+						</div>	
+						
+						<div class="widget-box widget-box-hledit widget-box-hledit-ordercontent-left widget-box-hledit-ordercontent-specialleft">
+							<div class="widget-title">
+								<h4>History</h4>
+							</div>
+							<div class="widget-content nopadding">
+							
+								<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+									<ul id="myTab" class="nav nav-tabs ordercontent-tabnav" role="tablist">
+									  <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">All activity</a></li>
+									  <li role="presentation"><a href="#Fulfillments" role="tab" id="Fulfillments-tab" data-toggle="tab" aria-controls="Fulfillments">Fulfillments</a></li>
+									  <li role="presentation"><a href="#Transactions" role="tab" id="Transactions-tab" data-toggle="tab" aria-controls="Transactions">Transactions</a></li>	  
+									</ul>
+									<div id="myTabContent" class="tab-content ordercontent-tabbox">
+									  <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledBy="home-tab">
+										<h4>June 1, 2015 EDT</h4>
+										<ul>
+											<li>
+												<div class="orderconetent-tablist"><i class="fa fa-lock"></i>Order was archived<span>2:56AM EDT</span></div>
+											</li>
+											<li>
+												<div class="orderconetent-tablist">
+													<i class="fa fa-envelope-o fa-fw"></i>Shipping confirmation email was sent to the customer<a href="#"> Resend email</a>
+													<span>2:56AM EDT</span>
+												</div>	
+											</li>
+											<li>
+												<div class="orderconetent-tablist">
+													<i class="fa fa-truck ordercontent-icolor"></i><a href="#">We successfully fulfilled 1 line item</a><span>2:56AM EDT</span>
+												</div>
+											</li>
+										</ul>
+										 <h4>June 1, 2015 EDT</h4>
+										<ul>
+											<li>
+												<div class="orderconetent-tablist"><i class="fa fa-lock"></i>Order was archived<span>2:56AM EDT</span></div>
+											</li>
+											<li>
+												<div class="orderconetent-tablist">
+													<i class="fa fa-arrow-right"></i>Shipping confirmation email was sent to the customer<a href="#"> Resend email</a>
+													<span>2:56AM EDT</span>
+												</div>
+											</li>
+											<li>
+												<div class="orderconetent-tablist">
+													<i class="fa fa-star ordercontent-icolor"></i><a href="#">We successfully fulfilled 1 line item</a>
+													<span>2:56AM EDT</span>
+												</div>
+											</li>
+										</ul>
+									  </div>
+									  <div role="tabpanel" class="tab-pane fade" id="Fulfillments" aria-labelledBy="Fulfillments-tab">
+										 <h4>June 2, 2015 EDT</h4>
+										 <ul>
+											<li>
+												<div class="orderconetent-tablist"><i class="fa fa-lock ordercontent-icolor"></i>Order was archived<span>2:56AM EDT</span></div>
+											</li>
+										 </ul>
+									  </div>
+									   <div role="tabpanel" class="tab-pane fade" id="Transactions" aria-labelledBy="Transactions-tab">
+										 <h4>June 3, 2015 EDT</h4>
+										 <ul>
+											<li>
+												<div class="orderconetent-tablist"><i class="fa fa-lock ordercontent-icolor"></i>Order was archived<span>2:56AM EDT</span></div>
+											</li>
+											<li>
+												<div class="orderconetent-tablist"><i class="fa fa-lock"></i>Order was archived<span>2:56AM EDT</span></div>
+											</li>
+										 </ul>
+									  </div>
+									</div>
+								  </div><!-- /example -->
+							</div>
+						</div>	
+					</div>
+					<div class="col-xs-12 col-sm-4 col-lg-4">
+						<div class="widget-box widget-box-hledit widget-box-hledit-ordercontent-right">
+							<div class="widget-box-hledit-ordercontent-right-border">
+								<div class="widget-title col-sm-3 col-xs-3">
+									<h5>Fulfill</h5>
+								</div>
+								<div class="widget-content nopadding col-sm-6 col-xs-6">
+									<select class="form-control" disabled="disabled">
+									  <option>Fulfilled</option>
+									  <option>Unfulfilled</option>
+									</select>
+								</div>
+								<div class="pull-right col-sm-3 col-sm-3">
+									
+									<button type="button" class="btn btn-default btn-bgcolor-white" data-toggle="modal" data-target=".produccontent-button-Fulfilldialog">Fulfill</button>
+									<div class="modal produccontent-button-Fulfilldialog" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
+										<div class="modal-dialog">
+										  <div class="modal-content">
+											<div class="modal-header">
+											  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											  <h4 class="modal-title" id="gridSystemModalLabel">Fulfill</h4>
+											</div>
+											<div class="modal-body">
+											  <div class="container-fluid">
+												<div class="row Reasonrefundbox">
+													<form>
+													  <div class="form-group">
+														<label for="TrackingNumber">Tracking Number</label>
+														<input type="email" class="form-control" id="TrackingNumber" placeholder="Tracking Number">
+													  </div>
+													  <div class="form-group">
+														<label for="TrackingURL">Tracking URL</label>
+														<input type="password" class="form-control" id="TrackingURL" placeholder="Tracking URL">
+													  </div>
+													</form>
+												</div>
+											  </div>
+											</div>
+											<div class="modal-footer">
+											  <button type="button" class="btn btn-default btn-bgcolor-white" data-dismiss="modal">Cancel</button>
+											  <button type="button" class="btn btn-default btn-bgcolor-blue">Fulfill</button>
+											</div>
+										  </div><!-- /.modal-content -->
+										</div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->  										
+									
+								</div>
+								<div class="clearfix"></div>
+							 </div>	
+							 <div class="widget-box-hledit-ordercontent-right-border">
+								<div class="widget-title col-sm-3 col-xs-3">
+									<h5>Payment</h5>
+								</div>
+								<div class="widget-content nopadding col-sm-6 col-xs-6">
+									<select class="form-control" disabled="disabled">
+									  <option>Paid</option>
+									  <option>Refunded</option>
+									  <option>Partial refunded</option>
+									  <option>Unpaid</option>
+									</select>
+								</div>
+								<div class="pull-right col-sm-3 col-xs-3">
+									
+									<button type="button" class="btn btn-default btn-bgcolor-white" data-toggle="modal" data-target=".produccontent-button-Refunddialog">Refund</button>
+									<div class="modal produccontent-button-Refunddialog" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
+										<div class="modal-dialog">
+										  <div class="modal-content">
+											<div class="modal-header">
+											  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											  <h4 class="modal-title" id="gridSystemModalLabel">Refund Payments</h4>
+											</div>
+											<div class="modal-body">
+											  <div class="container-fluid">
+												<table class="table Refund-table">
+													<tbody>
+														<tr>
+														  <th>Product</th>
+														  <th>Price</th>
+														  <th>Ordered</th>
+														  <th>Returned</th>
+														  <th>Return</th>
+														</tr>
+														<tr>	
+														  <td>
+															  <a href="#">$11.9 for a 4 Digit Combination Steel Bike Lock</a>
+															  <h6> Default / red / jhh,gd,jjj</h6>
+															  <h6><strong class="note subdued">SKU:</strong> PRO-2124</h6>
+														  </td>
+														  <td>$<span class="Payments-modal-price">11.90</span></td>
+														  <td class="quantityval">19</td>
+														  <td>0</td>
+														  <td>
+														   <div class="product-attribute-add qty_cart">
+															 <button title="Increase Qty" onClick="qtyUp(); return false;" class="increase">+</button>
+														<input id="quantity-valinput" name="cart" value="0" size="4" title="Qty" class="input-text qty" maxlength="12" readonly>
+															 <button title="Decrease Qty" onClick="qtyDown(); return false;" class="decrease">-</button>	
+														   </div>
+														  
+														  </td>
+														</tr>
+													</tbody>
+												</table>	
+												<table class="table Restock-table">
+													<tbody>
+														<tr>
+															<td class="text-right" colspan="2">
+																<label class="subdued">
+																<input type="checkbox" class="Restock-checkbox"> Restock<span class="Restock-quantity">0 item</span>
+																</label>
+															</td>
+														</tr>
+														<tr>	
+														  <td>Shipping</td>
+														  <td>$10.00</td>
+														</tr>
+														<tr>	
+														  <td>Total available to refund:</td>
+														  <td>$23.09</td>
+														</tr>
+													</tbody>
+												</table>
+												<table class="table Restock-paypal">
+													<tbody>
+														<tr>	
+														  <td><i class="fa fa-paypal"></i>Refund with: (For Testing) Bogus Gateway(•••• •••• •••• 1)</td>
+														  <td>
+																<div class="input-group">
+																  <div class="input-group-addon">$</div>
+																  <input type="text" class="form-control Refundwith-input" id="Refundwith-input" value="0.00">
+																</div>
+														  </td>
+														</tr>
+													</tbody>
+												</table>								
+												<div class="row Reasonrefundbox">
+													<label for="Reasonrefund"><b>Reason for refund (optional)</b></label>
+													<input type="text" class="form-control" id="Reasonrefund">
+												</div>
+											  </div>
+											</div>
+											<div class="modal-footer">
+											   <div class="checkbox pull-left text-left">
+													<label class="subdued">
+													  <input type="checkbox" checked="checked">Send a <a href="#">notification email</a> to the customer
+													</label>
+												</div>
+											  <button type="button" class="btn btn-default btn-bgcolor-white" data-dismiss="modal">Cancel</button>
+											  <button type="button" class="btn btn-default btn-bgcolor-white" disabled="disabled" id="Refundbtn">Refund $<span class="Refundprice">0.00</span></button>
+											</div>
+										  </div><!-- /.modal-content -->
+										</div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->  										
+										
+								</div>
+								<div class="clearfix"></div>
+							 </div>	
+							  <div class="widget-box-hledit-ordercontent-right-border">
+								<div class="widget-title col-sm-3 col-xs-3">
+									<h5>Archive</h5>
+								</div>
+								<div class="widget-content nopadding col-sm-6 col-xs-6">
+									<select class="form-control">
+									  <option>processing</option>
+									  <option>finished</option>
+									  <option>cancle</option>
+									</select>
+								</div>
+								<div class="pull-right col-sm-3 col-xs-3">
+									<button type="button" class="btn btn-default btn-bgcolor-white">save</button>
+								</div>
+								<div class="clearfix"></div>
+							 </div>	
+						</div>	
+						
+						<div class="widget-box widget-box-hledit widget-box-hledit-ordercontent-right">
+							<div class="ordercontent-right-map">
+								<h4 class="ordercontent-right-map-nameh4"><a href="#">paddy zhu</a></h4>
+							</div>
+							<div class="ordercontent-right-map ordercontent-right-mapaddress">
+								<h5 class="ordercontent-right-mapaddress-span"><span>Shipping address </span>
+								
+									<a href="#" data-toggle="modal" data-target=".produccontent-buttonShipping-editdialog">edit</a>
+									<div class="modal produccontent-buttonShipping-editdialog" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
+										<div class="modal-dialog">
+										  <div class="modal-content">
+											<div class="modal-header">
+											  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											  <h4 id="gridSystemModalLabel">Edit Address</h4>
+											</div>
+											<div class="modal-body">
+											  <div class="container-fluid">
+												<div class="row">
+												  <form>
+													  <div class="form-inline-box">
+														  <div class="form-group">
+															<label for="Customername">Customer name</label>
+															<input type="text" class="form-control" id="Customername" value="Paddy lizhou">
+														  </div>
+														  <div class="form-group">
+															<label for="Companyinput">Company</label>
+															<input type="text" class="form-control" id="Companyinput" value="pandacheer">
+														  </div>
+													  </div>
+													  <div class="form-group">
+														<label for="Address1input">Address1</label>
+														<input type="text" class="form-control" id="Address1input" value="rose street">
+													  </div>
+													  <div class="form-group">
+														<label for="Address2input">Address2</label>
+														<input type="text" class="form-control" id="Address2input">
+													  </div>
+													  <div class="form-inline-box">
+														  <div class="form-group">
+															<label for="Cityinput">City</label>
+															<input type="text" class="form-control" id="Cityinput" value="chei">
+														  </div>
+														  <div class="form-group">
+															<label for="Zipinput">Zip / Postal code</label>
+															<input type="text" class="form-control" id="Zipinput" value="2000">
+														  </div>
+													  </div>
+													   <div class="form-inline-box">	  
+														  <div class="form-group">
+															<label for="exampleInputEmail1">Country</label>
+															<select class="form-control">
+															  <option>1</option>
+															  <option>2</option>
+															  <option>3</option>
+															  <option>4</option>
+															  <option>5</option>
+															</select>
+														  </div>
+														  <div class="form-group">
+															<label for="Provinceinput">Province</label>
+															<select class="form-control">
+															  <option>1</option>
+															  <option>2</option>
+															  <option>3</option>
+															  <option>4</option>
+															  <option>5</option>
+															</select>
+														  </div>
+														  <div class="form-group">
+															<label for="Phoneinput">Phone</label>
+															<input type="text" class="form-control" id="Phoneinput">
+														  </div>
+													 </div>	  
+												 </form>
+												</div>
+											  </div>
+											</div>
+											<div class="modal-footer">
+											  <button type="button" class="btn btn-default btn-bgcolor-white" data-dismiss="modal">Cancel</button>
+											  <button type="button" class="btn btn-primary btn-bgcolor-blue">Save</button>
+											</div>
+										  </div><!-- /.modal-content -->
+										</div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->  												
+								
+								</h5>
+								
+								
+								<h6>paddy zhu</h6>
+								<h6>pandacheer</h6>
+								<h6>Suite 801, Level 8, 370 Pitt Street, Sydney NSW 2000</h6>
+								<h6>Sydney, NSW 2000</h6>
+								<h6>Australia </h6>
+							</div>
+							
+							<div class="ordercontent-right-map ordercontent-right-mapaddress">
+								<h5 class="ordercontent-right-mapaddress-span"><span>billing address</span>
+								
+									<a href="#" data-toggle="modal" data-target=".produccontent-buttonbilling-editdialog">edit</a>
+									<div class="modal produccontent-buttonbilling-editdialog" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
+										<div class="modal-dialog">
+										  <div class="modal-content">
+											<div class="modal-header">
+											  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											  <h4 id="gridSystemModalLabel">Edit Address</h4>
+											</div>
+											<div class="modal-body">
+											  <div class="container-fluid">
+												<div class="row">
+												  <form>
+													  <div class="form-inline-box">
+														  <div class="form-group">
+															<label for="Customername">Customer name</label>
+															<input type="text" class="form-control" id="Customername" value="Paddy lizhou">
+														  </div>
+														  <div class="form-group">
+															<label for="Companyinput">Company</label>
+															<input type="text" class="form-control" id="Companyinput" value="pandacheer">
+														  </div>
+													  </div>
+													  <div class="form-group">
+														<label for="Address1input">Address1</label>
+														<input type="text" class="form-control" id="Address1input" value="rose street">
+													  </div>
+													  <div class="form-group">
+														<label for="Address2input">Address2</label>
+														<input type="text" class="form-control" id="Address2input">
+													  </div>
+													  <div class="form-inline-box">
+														  <div class="form-group">
+															<label for="Cityinput">City</label>
+															<input type="text" class="form-control" id="Cityinput" value="chei">
+														  </div>
+														  <div class="form-group">
+															<label for="Zipinput">Zip / Postal code</label>
+															<input type="text" class="form-control" id="Zipinput" value="2000">
+														  </div>
+													  </div>
+													   <div class="form-inline-box">	  
+														  <div class="form-group">
+															<label for="exampleInputEmail1">Country</label>
+															<select class="form-control">
+															  <option>1</option>
+															  <option>2</option>
+															  <option>3</option>
+															  <option>4</option>
+															  <option>5</option>
+															</select>
+														  </div>
+														  <div class="form-group">
+															<label for="Provinceinput">Province</label>
+															<select class="form-control">
+															  <option>1</option>
+															  <option>2</option>
+															  <option>3</option>
+															  <option>4</option>
+															  <option>5</option>
+															</select>
+														  </div>
+														  <div class="form-group">
+															<label for="Phoneinput">Phone</label>
+															<input type="text" class="form-control" id="Phoneinput">
+														  </div>
+													 </div>	  
+												 </form>
+												</div>
+											  </div>
+											</div>
+											<div class="modal-footer">
+											  <button type="button" class="btn btn-default btn-bgcolor-white" data-dismiss="modal">Cancel</button>
+											  <button type="button" class="btn btn-primary btn-bgcolor-blue">Save</button>
+											</div>
+										  </div><!-- /.modal-content -->
+										</div><!-- /.modal-dialog -->
+									</div><!-- /.modal -->  												
+								
+								</h5>
+								
+								
+								<h6>paddy zhu</h6>
+								<h6>pandacheer</h6>
+								<h6>Suite 801, Level 8, 370 Pitt Street, Sydney NSW 2000</h6>
+								<h6>Sydney, NSW 2000</h6>
+								<h6>Australia </h6>
+							</div>
+							
+							<div class="ordercontent-right-map">
+								<h5 class="ordercontent-right-map-h5">
+									<i class="fa fa-envelope-o fa-fw ordercontent-right-map-istyle"></i>
+									<a href="#" class="ordercontent-right-map-a">Paddyzhu@me.com</a>
+								</h5>
+							</div>
+							<div class="ordercontent-right-map ordercontent-right-mapShipping">
+							    <i class="fa fa-truck ordercontent-right-map-istyle"></i>
+								<div class="ordercontent-right-mapShipping-method">
+									<h6>Shipping method: <strong>Standard Shipping</strong></h6>
+									<h6>Tracking Number: <a href="#"> 12345678</a></h6>
+									<h6>Total weight: <strong>0.0 kg</strong></h6>
+								</div>
+							</div>
+						</div>
+						
+						<div class="widget-box widget-box-hledit widget-box-hledit-ordercontent-right">
+							<div class="widget-title">
+								<h4 class="productcontent-seotitle">Risk Analysis</h4>
+							</div>
+							<div class="widget-content nopadding">
+								<h6 class="divider-slim">The following risks were assessed for this order:</h6>
+								<h6 class="ordercontent-iaddress-box"><i class="fa fa-warning ordercontent-iaddress"></i>
+									The billing address is listed as Australia, but the order was placed from United States</h6>
+								<h6><i class="fa fa-map-marker ordercontent-imap"></i>Order placed from IP: <strong>104.131.130.250</strong></h6>
+							</div>
+						</div>	
+						
+						<div class="widget-box widget-box-hledit widget-box-hledit-ordercontent-right">
+							<div class="widget-title">
+								<h4 class="productcontent-seotitle">Conversion</h4>
+							</div>
+							<div class="widget-content nopadding">
+								<h6>Landing page</h6>
+								<h6><a class="plain" href="https://drgrab-dev.myshopify.com/products_preview?cache=false&amp;preview_key=0e735e64c42d690f6020dafe642c16a2" target="_blank">/products_preview?cache=false&amp;preview_key=0e735e64c42d690f6020dafe6...</a></h6>
+								
+								<h6>Referal Site</h6>
+								<h6><a class="plain" href="https://drgrab-dev.myshopify.com/products_preview?cache=false&amp;preview_key=0e735e64c42d690f6020dafe642c16a2" target="_blank">http://facebook.com/abc</a></h6>
+							</div>
+						</div>	
+	   
+					</div>
+					<div class="clearfix"></div>
+					
+				</div>	
+			</div>
+			<div class="row">
+				<div id="footer" class="col-xs-12"></div>
+			</div>
+		</div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-ui.custom.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!--左侧nav-->
+		<script src="js/jquery.nicescroll.min.js"></script>
+		<script src="js/unicorn.js"></script>
+
+		<script>
+		$('#myTab a').click(function (e) {
+		  e.preventDefault();
+		  $(this).tab('show');
+		})
+
+		//购买产品数量函数
+		function qtyDown(){
+			var qty_el = document.getElementById('quantity-valinput');
+			var qty = qty_el.value;
+			if(qty <=0) return false;
+			qty = --qty_el.value; 
+			var Paymentspricetext = Number($(".Payments-modal-price").text());
+			if( !isNaN( qty ) && qty > 0 ){ 
+				$("#Refundwith-input").val(Number((Paymentspricetext*(parseFloat($("#quantity-valinput").val())))).toFixed(2));
+				var Refundwithval = parseFloat($("#Refundwith-input").val());  
+				$(".Refundprice").text(Refundwithval);
+				$("#Refundbtn").removeAttr("disabled");
+			}else if(qty == 0){
+				$("#Refundbtn").removeClass("btn-bgcolor-blue");$("#Refundbtn").addClass("btn-bgcolor-white");
+				$(".Refundprice").text("0.00");
+				$("#Refundbtn").attr("disabled","disabled");
+				$("#Refundwith-input").val("0.00");
+			}        
+			return false;
+		}
+
+		function qtyUp(){
+			var qty_el = document.getElementById('quantity-valinput');
+			var qty = qty_el.value;  
+			var quantityval = Number($(".quantityval").text()); 
+			var Paymentspricetext = $(".Payments-modal-price").text();
+			if( !isNaN( qty ) && qty < quantityval) { 
+				qty_el.value++;
+
+				//$("#Refundwith-input").val((Paymentspricetext*(parseFloat($("#quantity-valinput").val())))).toFixed(2);
+
+				$("#Refundwith-input").val(Number((Paymentspricetext*(parseFloat($("#quantity-valinput").val())))).toFixed(2));
+
+				$("#Refundbtn").addClass("btn-bgcolor-blue"); $("#Refundbtn").removeClass("btn-bgcolor-white");
+				var Refundwithval = parseFloat($("#Refundwith-input").val());
+				$(".Refundprice").text(Refundwithval);
+				$("#Refundbtn").removeAttr("disabled");
+			}
+			return false;
+		}
+		</script>
+	</body>
+</html>
